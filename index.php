@@ -2,11 +2,17 @@
 session_start();
 include 'header.php'; ?>
 
-	<div class="cart-list" style="border-bottom: 2px dotted green">
+	<div class="cart-list">
 		
-		<center><h3>Shopping Cart</h3></center>
-		Number of items: <?php echo count($_SESSION["cart_item"]); ?><br>
-		<a href="view_cart.php">View Cart</a>
+        <a href="view_cart.php" class="btn btn-info">
+          	<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart: 
+          	<span style="background-color: #2bacd4">
+	          	<?php if(isset($_SESSION["cart_item"])){
+	          		echo count($_SESSION["cart_item"]);
+	          		} else echo 0; 
+	          	?>
+	        </span>
+        </a>
 
 	</div>
 
