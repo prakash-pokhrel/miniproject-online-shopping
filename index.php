@@ -1,20 +1,5 @@
 <?php 
-session_start();
 include 'header.php'; ?>
-
-	<div class="cart-list">
-		
-        <a href="view_cart.php" class="btn btn-info">
-          	<span class="glyphicon glyphicon-shopping-cart"></span> Shopping Cart: 
-          	<span style="background-color: #2bacd4">
-	          	<?php if(isset($_SESSION["cart_item"])){
-	          		echo count($_SESSION["cart_item"]);
-	          		} else echo 0; 
-	          	?>
-	        </span>
-        </a>
-
-	</div>
 
 	<center><h3>List of Products</h3></center>
 

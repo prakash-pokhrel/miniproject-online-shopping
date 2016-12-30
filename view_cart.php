@@ -1,5 +1,4 @@
 <?php include('header.php'); ?>
-<?php session_start(); ?>
 <?php require_once('mysqli_connect.php'); ?>
 <div class="panel panel-default">
   	<div class="panel-heading"><h4><center>Items in cart</center></h4></div>
